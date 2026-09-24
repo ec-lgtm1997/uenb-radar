@@ -1,0 +1,808 @@
+{
+  "issue": "Ausgabe 39 / 2026",
+  "updated": "2026-09-24",
+  "lead": {
+    "title": "Netzpaket im Bundestag, Offshore-Reform im Kabinett",
+    "text": "Die Reform des Netzanschlussverfahrens ist in der ersten Lesung und geht jetzt in die Ausschussberatung. Das Kabinett hat die WindSeeG-Novelle mit Differenzverträgen und stärkerer Überbauung der Netzanbindungen beschlossen. Der Bundeszuschuss zu den Übertragungsnetzkosten soll bis 2029 weiterlaufen."
+  },
+  "deadlines": [
+    {
+      "date": "2026-09-18",
+      "label": "AgNes: Ende der Konsultation zum Festlegungsentwurf"
+    },
+    {
+      "date": "2026-09-24",
+      "label": "Netzpaket: 1. Lesung im Bundestag"
+    },
+    {
+      "date": "2026-12-01",
+      "display": "Winter 26/27",
+      "label": "Sicherheitsplattform Strom: erstes System geplant"
+    },
+    {
+      "date": "2026-12-29",
+      "label": "StromVKG: zweiter Ausschreibungstermin für steuerbare Leistung"
+    },
+    {
+      "date": "2026-12-30",
+      "display": "Ende 2026",
+      "label": "AgNes: finale Festlegung geplant"
+    },
+    {
+      "date": "2026-12-31",
+      "display": "Ende 2026",
+      "label": "EU Grids Package: Trilog-Einigung angestrebt"
+    },
+    {
+      "date": "2027-01-01",
+      "label": "EEG-Novelle: gilt für Neuanlagen ab 2027 (Entwurf)"
+    },
+    {
+      "date": "2027-01-01",
+      "label": "Zuschuss Übertragungsnetzkosten: Förderzeitraum 2027–2029 beginnt (Entwurf)"
+    },
+    {
+      "date": "2029-01-01",
+      "label": "AgNes: neue Netzentgeltsystematik soll gelten"
+    }
+  ],
+  "items": [
+    {
+      "stage": 1,
+      "date": "2026-09-24",
+      "source": "Deutscher Bundestag",
+      "ref": "Drs. 21/7866",
+      "topics": [
+        "Netzanschluss",
+        "Redispatch",
+        "Gesetzgebung"
+      ],
+      "title": "Netzpaket: Bundestag berät Reform von Netzanschlussverfahren und Redispatch",
+      "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw39-de-energiewirtschaftsrecht-1211298",
+      "summary": "Netzbetreiber sollen Anschlussbegehren stärker priorisieren dürfen. In ausgewiesenen Engpassgebieten entfällt die Redispatch-Entschädigung für 18 % (Windvorranggebiete) bzw. 20 % der abgeregelten Menge. Der Entwurf geht an den Ausschuss für Wirtschaft und Energie.",
+      "why": "Betrifft das Kerngeschäft Netzanschluss direkt. Der Entwurf schafft die Rechtsgrundlage für die Abkehr von „first come, first served“ hin zu einer reifegradbasierten Vergabe, wie sie die ÜNB bereits eingeführt haben.",
+      "check": [
+        "Deckt sich die gesetzliche Priorisierung mit dem Reifegradverfahren der ÜNB?",
+        "Übergangsregeln für laufende Verfahren und bereits erteilte Zusagen",
+        "Wer weist Engpassgebiete aus und welche Rolle haben ÜNB dabei?"
+      ],
+      "next": "Anhörungstermin und Änderungsanträge verfolgen. Interne Abläufe für Antragsprüfung und Zusagen auf Anpassungsbedarf prüfen.",
+      "docs": [
+        {
+          "title": "Gesetzentwurf der Bundesregierung (Drucksache 21/7866)",
+          "type": "Gesetzentwurf",
+          "org": "Deutscher Bundestag",
+          "date": "2026-09-07",
+          "fmt": "PDF",
+          "url": "https://dserver.bundestag.de/btd/21/078/2107866.pdf"
+        }
+      ]
+    },
+    {
+      "stage": 4,
+      "date": "2026-09-17",
+      "source": "ZfK",
+      "ref": "",
+      "topics": [
+        "Netzentgelte",
+        "Positionen"
+      ],
+      "title": "EnBW fordert bundeseinheitliche Verteilnetzentgelte",
+      "url": "https://www.zfk.de/politik/regulierung/bundesnetzagentur-ticker-festlegungen-prozesse-vorschlaege-2026",
+      "summary": "In ihrer Stellungnahme zu AgNes bedauert EnBW, dass die BNetzA bundeseinheitliche Verteilnetzentgelte nicht weiterverfolgt, und zeigt sich skeptisch gegenüber sehr kurzfristigen dynamischen Entgelten.",
+      "why": "Betrifft die Verteilnetzebene. Übertragungsnetzentgelte sind bereits bundeseinheitlich.",
+      "check": [],
+      "next": "Kein Handlungsbedarf.",
+      "docs": []
+    },
+    {
+      "stage": 3,
+      "date": "2026-09-04",
+      "source": "BWE",
+      "ref": "",
+      "topics": [
+        "Netzanschluss",
+        "Redispatch",
+        "Positionen"
+      ],
+      "title": "Windbranche kritisiert Kabinettsentwurf zum Netzpaket",
+      "url": "https://www.wind-energie.de/fileadmin/redaktion/dokumente/publikationen-oeffentlich/themen/04-politische-arbeit/01-gesetzgebung/20260904_BWE_Stellungnahme_Netzpaket_Kabinettsbeschluss.pdf",
+      "summary": "Der Bundesverband WindEnergie hat seine Stellungnahme zum Kabinettsbeschluss des Netzpakets veröffentlicht. Im Fokus stehen der Redispatch-Vorbehalt und die Ausweisung von Engpassgebieten.",
+      "why": "Zeigt, welche Punkte im parlamentarischen Verfahren von der Erzeugerseite angegriffen werden. Hilft einzuschätzen, wo sich der Entwurf noch ändern kann.",
+      "check": [
+        "Welche Änderungswünsche betreffen direkt die Pflichten der Netzbetreiber?"
+      ],
+      "next": "Kein Handlungsbedarf. Als Argumentationshilfe für die Ausschussphase nutzen.",
+      "docs": [
+        {
+          "title": "Stellungnahme Netzanschlusspaket (Kabinettsbeschluss)",
+          "type": "Stellungnahme",
+          "org": "BWE",
+          "date": "2026-09-04",
+          "fmt": "PDF",
+          "url": "https://www.wind-energie.de/fileadmin/redaktion/dokumente/publikationen-oeffentlich/themen/04-politische-arbeit/01-gesetzgebung/20260904_BWE_Stellungnahme_Netzpaket_Kabinettsbeschluss.pdf"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "date": "2026-09-03",
+      "source": "Bundesregierung",
+      "ref": "",
+      "topics": [
+        "Offshore",
+        "Netzanbindung",
+        "Gesetzgebung"
+      ],
+      "title": "Kabinett beschließt WindSeeG-Novelle mit Differenzverträgen und mehr Überbauung der Netzanbindungen",
+      "url": "https://www.stadt-und-werk.de/k21-meldungen/windenergie-auf-see-gesetz-beschlossen/",
+      "summary": "Neue Offshore-Anlagen sollen über zweiseitige Differenzverträge (CfD) gefördert werden, die Betriebsdauer steigt von 25 auf 35 Jahre. Netzanbindungen sollen stärker überbaut werden, um sie besser auszulasten.",
+      "why": "Stärkere Überbauung verändert Auslegung und Auslastung der Offshore-Netzanbindungen, die von ÜNB geplant und betrieben werden. Das Ausschreibungsdesign beeinflusst, wie verlässlich die Anbindungskapazität tatsächlich genutzt wird.",
+      "check": [
+        "Welches Überbauungsverhältnis ist vorgesehen und wer trägt das Abregelungsrisiko?",
+        "Auswirkungen auf Flächenentwicklungsplan und Anbindungszeitpunkte"
+      ],
+      "next": "Parlamentarisches Verfahren verfolgen.",
+      "docs": [
+        {
+          "title": "Stellungnahme zum Entwurf der WindSeeG-Novelle 2026",
+          "type": "Stellungnahme",
+          "org": "Stiftung Offshore-Windenergie",
+          "date": "2026-08-01",
+          "dateDisplay": "Aug 2026",
+          "fmt": "Web",
+          "url": "https://www.offshore-stiftung.de/de/Stellungnahme-die-Stiftung-Offshore-Windenergie-zum-zum-Entwurf-des-Gesetzes-zur-Optimierung-und-Absicherung-des-Ausbaus-der-Windenergie-auf-See-WindSeeG-Novelle-2026"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "date": "2026-09-02",
+      "source": "BMWE",
+      "ref": "Gesetzentwurf",
+      "topics": [
+        "Netzentgelte",
+        "Gesetzgebung"
+      ],
+      "title": "Bundeszuschuss zu den Übertragungsnetzkosten soll bis 2029 fortgeführt werden",
+      "url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Downloads/Gesetz/2026/20260902-gesetzentwurf-uebertragungsnetzkosten.pdf?__blob=publicationFile&v=4",
+      "summary": "Die Bundesregierung will den Zuschuss, der 2026 bereits gewährt wird, für die Jahre 2027 bis 2029 verlängern. Ziel ist die Entlastung der Netzentgelte.",
+      "why": "Wirkt direkt auf die Entgeltbildung der ÜNB. Der Zuschuss muss in Kalkulation und Veröffentlichung der Entgelte korrekt abgebildet werden.",
+      "check": [
+        "Höhe und Auszahlung je Jahr",
+        "Verabschiedung rechtzeitig vor Veröffentlichung der Entgelte 2027?",
+        "Nachweis- und Rückforderungspflichten"
+      ],
+      "next": "Gesetzgebung verfolgen. Entgeltkalkulation 2027 mit und ohne Zuschuss vorbereiten.",
+      "docs": [
+        {
+          "title": "Gesetzentwurf: Zuschuss zu den Übertragungsnetzkosten 2027–2029",
+          "type": "Gesetzentwurf",
+          "org": "BMWE",
+          "date": "2026-09-02",
+          "fmt": "PDF",
+          "url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Downloads/Gesetz/2026/20260902-gesetzentwurf-uebertragungsnetzkosten.pdf?__blob=publicationFile&v=4"
+        },
+        {
+          "title": "Stellungnahme zum Zuschuss zu den Übertragungsnetzkosten 2026",
+          "type": "Stellungnahme",
+          "org": "BDEW",
+          "date": "",
+          "dateDisplay": "o. D.",
+          "fmt": "Web",
+          "url": "https://www.bdew.de/service/stellungnahme-zum-zuschuss-zu-den-uebertragungsnetzkosten-2026/"
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "date": "2026-08-10",
+      "source": "Bundesnetzagentur",
+      "ref": "",
+      "topics": [
+        "Redispatch",
+        "Marktdaten"
+      ],
+      "title": "Redispatch-Kosten im ersten Quartal um rund 11 % gesunken",
+      "url": "https://www.zfk.de/politik/regulierung/bundesnetzagentur-ticker-festlegungen-prozesse-vorschlaege-2026",
+      "summary": "Die Kosten für Engpassmanagement lagen bei rund 784 Mio. €. 66 % entfallen auf das Übertragungsnetz, 34 % auf Verteilnetze, deren Anteil steigt. Abgeregelt wurden rund 3 % der erneuerbaren Erzeugung.",
+      "why": "Kennzahl für die Argumentation zu Netzausbau und Anschlusspriorisierung. Zeigt, dass sich Engpässe zunehmend in die unteren Netzebenen verlagern.",
+      "check": [
+        "Saisonaler Effekt oder Trend? Folgequartale vergleichen."
+      ],
+      "next": "Kein Handlungsbedarf.",
+      "docs": []
+    },
+    {
+      "stage": 1,
+      "date": "2026-08-06",
+      "source": "Bundesnetzagentur",
+      "ref": "",
+      "topics": [
+        "Versorgungssicherheit",
+        "Daten"
+      ],
+      "title": "Sicherheitsplattform Strom: Datenabfrage bei allen Netzbetreibern ab Winter 2026/27",
+      "url": "https://www.zfk.de/politik/regulierung/bundesnetzagentur-ticker-festlegungen-prozesse-vorschlaege-2026",
+      "summary": "Die Plattform soll Daten bei allen Stromnetzbetreibern und bei Großverbrauchern über 8 GWh Jahresverbrauch abfragen können. Ein erstes System ist für Winter 2026/27 geplant. Laut BNetzA liegt keine Mangellage vor.",
+      "why": "Neue Lieferpflicht mit kurzer Vorlaufzeit. ÜNB sind als Systemverantwortliche zentrale Datenlieferanten und voraussichtlich auch Nutzer der Plattform.",
+      "check": [
+        "Welche Datenpunkte, in welcher Granularität und Frequenz?",
+        "Neue Schnittstelle oder bestehende Meldewege?",
+        "Anforderungen an IT-Sicherheit beim Datenaustausch"
+      ],
+      "next": "Anforderungen einholen, Zuständigkeiten in Systemführung und IT klären, Aufwand abschätzen.",
+      "docs": []
+    },
+    {
+      "stage": 2,
+      "date": "2026-08-06",
+      "source": "Bundesnetzagentur",
+      "ref": "GBK-25-01-1#3",
+      "topics": [
+        "Netzentgelte",
+        "AgNes",
+        "Speicher"
+      ],
+      "title": "AgNes: vollständiger Festlegungsentwurf zur Netzentgeltsystematik ab 2029",
+      "url": "https://www.bundesnetzagentur.de/DE/Beschlusskammern/GBK/Ebene1_Rahmen/AgNes/start.html",
+      "summary": "Der Entwurf sieht erstmals Einspeiseentgelte für Erzeuger vor (ca. 4–7 €/kW/a, 20 Jahre Bestandsschutz), leistungsbasierte Entgelte für Großverbraucher und moderate Kapazitätsentgelte für Speicher. Dynamische Entgelte kommen frühestens 2030 (Speicher) bzw. 2032 (Erzeuger). Die Konsultation lief bis 18. September.",
+      "why": "Grundlegender Umbau der Entgeltseite. Einspeiseentgelte treffen vor allem große Erzeuger in Höchst- und Hochspannung und schaffen neue Abrechnungsbeziehungen.",
+      "check": [
+        "Abrechnung der Einspeiseentgelte auf Übertragungsnetzebene",
+        "Wechselwirkung mit Baukostenzuschüssen und Standortsignalen",
+        "Umsetzbarkeit in den Abrechnungssystemen bis 2029"
+      ],
+      "next": "Finale Festlegung (geplant bis Ende 2026) abwarten. Systemanpassungen und Kundenkommunikation grob einplanen.",
+      "docs": [
+        {
+          "title": "Festlegungsentwurf AgNes (GBK-25-01-1#3)",
+          "type": "Festlegungsentwurf",
+          "org": "Bundesnetzagentur",
+          "date": "2026-08-06",
+          "fmt": "PDF",
+          "url": "https://www.bundesnetzagentur.de/DE/Beschlusskammern/1_GZ/GBK-GZ/2025/GBK-25-01-1x3_AgNes/Downloads/FL-Entwurf_DE.pdf?__blob=publicationFile&v=6"
+        }
+      ]
+    },
+    {
+      "stage": 1,
+      "date": "2026-07-29",
+      "source": "BMWE",
+      "ref": "",
+      "topics": [
+        "Netzanschluss",
+        "Redispatch",
+        "EEG",
+        "Gesetzgebung"
+      ],
+      "title": "Kabinett beschließt EEG-Novelle und Netzanschlusspaket",
+      "url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Pressemitteilungen/2026/07/20260729-eeg-novelle-und-netzanschlusspaket.html",
+      "summary": "Für neue Wind-, Solar- und Biomasseanlagen ab 2027 soll die feste Einspeisevergütung entfallen, Direktvermarktung wird Pflicht. Das Netzanschlusspaket bringt Priorisierung von Anschlussbegehren, Kapazitätsreservierung und eine Bemessung der Netzkapazität nach typischen Einspeiseprofilen statt Spitzenwerten.",
+      "why": "Die Bemessung nach typischen Profilen und die Kapazitätsreservierung ändern direkt, wie Netzbetreiber Anschlusskapazität berechnen und vergeben.",
+      "check": [
+        "Methodik der profilbasierten Kapazitätsbemessung und Haftungsfragen",
+        "Verhältnis Kapazitätsreservierung zu bestehenden Reservierungsvereinbarungen",
+        "Schnittstellen zu Verteilnetzbetreibern bei Engpassgebieten"
+      ],
+      "next": "Umsetzungsbedarf in Anschlussprozessen und Kapazitätsberechnung skizzieren, bevor das Gesetz in Kraft tritt.",
+      "docs": [
+        {
+          "title": "Referentenentwurf EEG-Novelle",
+          "type": "Referentenentwurf",
+          "org": "BMWE",
+          "date": "2026-07-18",
+          "fmt": "PDF",
+          "url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Downloads/Gesetz/2026/20260718-eeg-novelle.pdf?__blob=publicationFile&v=8"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "date": "2026-07-09",
+      "source": "Deutscher Bundestag",
+      "ref": "Drs. 21/6279",
+      "topics": [
+        "Versorgungssicherheit",
+        "Kapazitätsmarkt",
+        "Gesetzgebung"
+      ],
+      "title": "Bundestag beschließt StromVKG: Ausschreibung von rund 9 GW steuerbarer Leistung",
+      "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw28-de-versorgungssicherheit-strom-1192538",
+      "summary": "Das Strom-Versorgungssicherheits- und Kapazitätsgesetz führt einen Kapazitätsmechanismus ein. Erste Ausschreibungen für rund 9 GW wasserstofffähige Leistung laufen 2026 (8. September und 29. Dezember), etwa zwei Drittel im Süden.",
+      "why": "Neue Kraftwerke im Süden können Netzengpässe entschärfen und langfristig die Netzreserve verkleinern. Standortwahl und Netzanschluss der Anlagen betreffen die ÜNB direkt.",
+      "check": [
+        "Wie wird die regionale Verteilung umgesetzt und wer bewertet Standorte netzseitig?",
+        "Netzanschlussbedarf und Zeitplan der bezuschlagten Anlagen"
+      ],
+      "next": "Zuschläge verfolgen und mit der Netzplanung abgleichen.",
+      "docs": [
+        {
+          "title": "Stellungnahme zum Kapazitätsgesetz",
+          "type": "Stellungnahme",
+          "org": "vzbv",
+          "date": "2026-05-05",
+          "fmt": "PDF",
+          "url": "https://www.vzbv.de/sites/default/files/2026-05/26-05-05_Stellungnahme_vzbv_BMWE_Kapazit%C3%A4tsgesetz.pdf"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "date": "2026-06-26",
+      "source": "Rat der EU",
+      "ref": "",
+      "topics": [
+        "EU",
+        "Netzplanung"
+      ],
+      "title": "European Grids Package: Rat legt Position fest, Trilog steht an",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/26/european-grids-package-council-backs-modernised-energy-network-for-decarbonisation/",
+      "summary": "Der Rat unterstützt ein zentrales Szenario für die europäische Netzplanung, schnellere Genehmigungen (überragendes öffentliches Interesse, Genehmigungsfiktion) und die schrittweise Reinvestition ungenutzter Engpasserlöse in Interkonnektoren: 10 % ab 2028, 25 % ab 2031.",
+      "why": "Verändert den Rahmen für TYNDP und die Verwendung von Engpasserlösen. Schnellere Genehmigungen können eigene Ausbauprojekte beschleunigen.",
+      "check": [
+        "Wie verbindlich wird das zentrale Szenario für nationale Netzentwicklungspläne?",
+        "Folgen der Engpasserlös-Quote für die Erlösobergrenze",
+        "Position des Parlaments"
+      ],
+      "next": "Kein unmittelbarer Handlungsbedarf. Trilog-Ergebnis prüfen.",
+      "docs": []
+    },
+    {
+      "stage": 3,
+      "date": "2026-06-03",
+      "source": "BDEW",
+      "ref": "",
+      "topics": [
+        "Netzanschluss",
+        "Positionen"
+      ],
+      "title": "BDEW nimmt Stellung zum Entwurf des Netzanschlusspakets",
+      "url": "https://www.bdew.de/service/bdew-stellungnahme-zum-netzanschlusspaket/",
+      "summary": "Der BDEW hat den inoffiziellen Referentenentwurf zum Netzanschlusspaket kommentiert und fordert ein konsistentes Gesamtpaket für Netzanschlüsse und Erneuerbare.",
+      "why": "Die Position des Branchenverbands prägt die weitere Ausgestaltung. Netzbetreiber-Interessen sind darin mitvertreten.",
+      "check": [
+        "Wo weicht die BDEW-Position von ÜNB-Interessen ab (z. B. bei Priorisierungskriterien)?"
+      ],
+      "next": "Kein Handlungsbedarf.",
+      "docs": [
+        {
+          "title": "Stellungnahme zum inoffiziellen Referentenentwurf Netzanschlusspaket",
+          "type": "Stellungnahme",
+          "org": "BDEW",
+          "date": "2026-06-03",
+          "fmt": "PDF",
+          "url": "https://www.bdew.de/media/documents/2026_06_03_BDEW-Stellungnahme_inoffizieller_RefE_Netzanschlusspaket_ohne_AP.pdf"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "date": "2026-05-27",
+      "source": "Bundesnetzagentur",
+      "ref": "GBK-25-01-1#3",
+      "topics": [
+        "Netzentgelte",
+        "AgNes"
+      ],
+      "title": "AgNes: BNetzA stellt Zwischenstand zur Netzentgeltreform vor",
+      "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260527_Agnes.html",
+      "summary": "Erzeuger sollen künftig Leistungsentgelte von geschätzt 4–7 €/kW/a zahlen, Bestandsanlagen erhalten 20 Jahre Schutz. Großverbraucher über 100.000 kWh wechseln zu Kapazitätspreisen, Speicher zahlen moderate Kapazitätsentgelte.",
+      "why": "Erster konkreter Einblick in die künftige Entgeltstruktur, bevor der formale Entwurf kommt.",
+      "check": [
+        "Abgrenzung der Einspeiseentgelte je Netzebene",
+        "Auswirkungen auf Netzanschlussnachfrage von Speichern"
+      ],
+      "next": "In interne Planung der Entgeltsystematik einfließen lassen.",
+      "docs": [
+        {
+          "title": "Vorläufiger Meinungsstand im Festlegungsverfahren AgNes (Kurzinfo)",
+          "type": "Kurzinfo",
+          "org": "Bundesnetzagentur",
+          "date": "2026-05-27",
+          "fmt": "PDF",
+          "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/20260527_AgnesKurzInfo.pdf?__blob=publicationFile&v=3"
+        },
+        {
+          "title": "Vorstellung Zwischenstand AgNes",
+          "type": "Präsentation",
+          "org": "Bundesnetzagentur",
+          "date": "2026-05-27",
+          "dateDisplay": "Mai 2026",
+          "fmt": "PDF",
+          "url": "https://www.bundesnetzagentur.de/DE/Beschlusskammern/GBK/GBK_Termine/Downloads/2026/05_2026/1_Bundesnetzagentur.pdf?__blob=publicationFile&v=5"
+        },
+        {
+          "title": "Stellungnahme zum Zwischenstand AgNes",
+          "type": "Stellungnahme",
+          "org": "BDEW",
+          "date": "",
+          "dateDisplay": "2026",
+          "fmt": "Web",
+          "url": "https://www.bdew.de/service/agnes-bnetza-festlegungsverfahren-allgemeinen-netzentgeltsystematik-strom/"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "date": "2026-05-22",
+      "source": "Bundesnetzagentur",
+      "ref": "",
+      "topics": [
+        "Versorgungssicherheit",
+        "Netzreserve"
+      ],
+      "title": "Netzreservebedarf für Winter 2026/27 auf 7.407 MW erhöht",
+      "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260522_Netzreserve.html",
+      "summary": "Die BNetzA bestätigt einen Bedarf von 7.407 MW (Vorjahr 6.493 MW), davon 4.742 MW im Inland und 2.665 MW im Ausland. Für 2028/29 werden 8.274 MW erwartet.",
+      "why": "Die Netzreserve wird auf Basis der Systemanalyse der ÜNB bestimmt und von ihnen kontrahiert. Kosten laufen über die Netzentgelte.",
+      "check": [
+        "Treiber des Anstiegs: Netzausbauverzögerungen oder Handelsflüsse?",
+        "Verfügbarkeit ausländischer Reserve"
+      ],
+      "next": "Kontrahierung und Kostenansatz für den Winter sicherstellen.",
+      "docs": []
+    },
+    {
+      "stage": 2,
+      "date": "2026-04-28",
+      "source": "BMWE",
+      "ref": "",
+      "topics": [
+        "Versorgungssicherheit",
+        "Kapazitätsmarkt",
+        "Gesetzgebung"
+      ],
+      "title": "StromVKG-Entwurf geht in die Verbändeanhörung",
+      "url": "https://www.solarserver.de/2026/04/28/versorgungssicherheit-stromvkg-entwurf-geht-in-verbaendeanhoerung-reiche-gesetzentwurf/",
+      "summary": "Der Entwurf regelt die Ausschreibung von rund 9 GW neuer Gaskraftwerke und den Rahmen für einen Kapazitätsmarkt. Batteriespeicher sind von der ersten Ausschreibung ausgeschlossen.",
+      "why": "Gesicherte Leistung im Süden ist für den Kohleausstieg und den Abbau der Netzreserve zentral.",
+      "check": [
+        "Regionale Komponente der Ausschreibung",
+        "Umgang mit Speichern"
+      ],
+      "next": "Siehe Bundestagsbeschluss vom 9. Juli.",
+      "docs": []
+    },
+    {
+      "stage": 3,
+      "date": "2026-03-31",
+      "source": "Bundesnetzagentur",
+      "ref": "",
+      "topics": [
+        "Redispatch",
+        "Marktdaten"
+      ],
+      "title": "Netzengpassmanagement 2025: Kosten steigen leicht auf 3,07 Mrd. €",
+      "url": "https://www.iwr.de/news/netzengpassmanagement-2025-stromnetz-stabil-kosten-leicht-gestiegen-bei-hohem-ausbau-erneuerbarer-energien-news39599",
+      "summary": "Die Kosten stiegen um 4 % gegenüber 2024 (2,95 Mrd. €), das Maßnahmenvolumen blieb mit rund 30,3 TWh praktisch gleich. Rund 3,5 % des erneuerbaren Stroms wurden abgeregelt, 71 % der Engpässe lagen im Übertragungsnetz.",
+      "why": "Referenzwert für die politische Debatte um Redispatch-Vorbehalt und Netzpaket.",
+      "check": [
+        "Kostenanstieg bei gleichem Volumen: Preiseffekt oder Maßnahmenmix?"
+      ],
+      "next": "Kein Handlungsbedarf.",
+      "docs": [
+        {
+          "title": "Faktencheck: Was kostet uns Redispatch?",
+          "type": "Positionspapier",
+          "org": "BWE",
+          "date": "2026-04-21",
+          "fmt": "PDF",
+          "url": "https://www.wind-energie.de/fileadmin/redaktion/dokumente/publikationen-oeffentlich/themen/04-politische-arbeit/01-gesetzgebung/20260421_Faktencheck_Redispatch.pdf"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "date": "2026-03-20",
+      "source": "ENTSO-E",
+      "ref": "",
+      "topics": [
+        "Systemstabilität",
+        "EU"
+      ],
+      "title": "Blackout auf der Iberischen Halbinsel: ENTSO-E veröffentlicht Abschlussbericht",
+      "url": "https://www.entsoe.eu/news/2026/03/20/entso-e-publishes-expert-panel-final-report-on-28-april-2025-blackout-in-spain-and-portugal/",
+      "summary": "Das Expertengremium sieht ein Zusammenwirken aus Schwingungen, Lücken bei Spannungs- und Blindleistungsregelung und schnellen Erzeugungsrückgängen als Ursache. Empfohlen werden bessere Betriebspraktiken, Systemüberwachung und Datenaustausch.",
+      "why": "Spannungshaltung und Blindleistung sind Kernaufgaben der ÜNB. Die Empfehlungen dürften in europäische Netzkodizes und nationale Anforderungen einfließen.",
+      "check": [
+        "Welche Empfehlungen sind auf das deutsche System übertragbar?",
+        "Anforderungen an Blindleistungsbereitstellung durch umrichterbasierte Anlagen"
+      ],
+      "next": "Empfehlungen mit eigenen Betriebskonzepten abgleichen.",
+      "docs": [
+        {
+          "title": "Final Report: 28 April 2025 Iberian Blackout",
+          "type": "Bericht",
+          "org": "ENTSO-E",
+          "date": "2026-03-20",
+          "fmt": "Web",
+          "url": "https://www.entsoe.eu/publications/blackout/28-april-2025-iberian-blackout/"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "date": "2026-03-13",
+      "source": "4 ÜNB",
+      "ref": "GBK-25-01-1#3",
+      "topics": [
+        "Netzentgelte",
+        "AgNes",
+        "Speicher"
+      ],
+      "title": "Speichernetzentgelte: gemeinsamer Konsultationsbeitrag der vier ÜNB",
+      "url": "https://www.amprion.net/Dokumente/Transparenz/Studien-und-Stellungnahmen/2026/Speichernetzentgelte-Konsultationsbeitrag-4UeNB.pdf",
+      "summary": "Die vier ÜNB haben ihre gemeinsame Position zu den Orientierungspunkten der BNetzA für Speichernetzentgelte im AgNes-Verfahren eingereicht.",
+      "why": "Gemeinsame Branchenposition der ÜNB. Speicher sind ein Großteil der aktuellen Anschlussanfragen im Höchstspannungsnetz.",
+      "check": [
+        "Wie weit hat die BNetzA die Position im Festlegungsentwurf aufgegriffen?"
+      ],
+      "next": "Mit Festlegungsentwurf vom 6. August abgleichen.",
+      "docs": [
+        {
+          "title": "Speichernetzentgelte – Konsultationsbeitrag der vier ÜNB",
+          "type": "Stellungnahme",
+          "org": "4 ÜNB",
+          "date": "2026-03-13",
+          "fmt": "PDF",
+          "url": "https://www.amprion.net/Dokumente/Transparenz/Studien-und-Stellungnahmen/2026/Speichernetzentgelte-Konsultationsbeitrag-4UeNB.pdf"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "date": "2026-03-01",
+      "dateDisplay": "März 2026",
+      "source": "Übertragungsnetzbetreiber",
+      "ref": "",
+      "topics": [
+        "Netzplanung"
+      ],
+      "title": "NEP Strom 2037/2045: zweiter Entwurf an die Bundesnetzagentur übergeben",
+      "url": "https://www.bne-online.de/netzentwicklungsplanstrom-2037-2045-version-2025/",
+      "summary": "Nach der Konsultation des ersten Entwurfs (Dezember 2025) haben die ÜNB den zweiten Entwurf vorgelegt. Kritik aus der Branche betrifft u. a. die Szenarioauswahl und die Annahmen zur Speicherdauer.",
+      "why": "Grundlage für die Bestätigung neuer Ausbaumaßnahmen durch die BNetzA.",
+      "check": [
+        "Welche Maßnahmen sind strittig?",
+        "Zeitplan der Bestätigung durch die BNetzA"
+      ],
+      "next": "Bestätigungsverfahren der BNetzA verfolgen.",
+      "docs": [
+        {
+          "title": "NEP 2037/2045 (2025), 2. Entwurf – kompakt",
+          "type": "Netzentwicklungsplan",
+          "org": "Übertragungsnetzbetreiber",
+          "date": "2026-03-01",
+          "dateDisplay": "März 2026",
+          "fmt": "PDF",
+          "url": "https://www.netzentwicklungsplan.de/sites/default/files/2026-03/NEP_2037_2045_V2025_2_Entwurf_kompakt_DE.pdf"
+        },
+        {
+          "title": "NEP 2037/2045 (2025), 1. Entwurf",
+          "type": "Netzentwicklungsplan",
+          "org": "Übertragungsnetzbetreiber",
+          "date": "2025-12-10",
+          "fmt": "PDF",
+          "url": "https://www.netzentwicklungsplan.de/sites/default/files/2025-12/NEP_2037_2045_V2025_1_Entwurf.pdf"
+        },
+        {
+          "title": "Stellungnahme zum NEP Strom 2037/2045 (2025)",
+          "type": "Stellungnahme",
+          "org": "bne",
+          "date": "2026-01-14",
+          "fmt": "Web",
+          "url": "https://www.bne-online.de/stellungnahme-netzentwicklungsplanstrom-2037-2045-version-2025/"
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "date": "2026-02-27",
+      "source": "BVES / bne",
+      "ref": "GBK-25-01-1#3",
+      "topics": [
+        "Netzentgelte",
+        "AgNes",
+        "Speicher",
+        "Positionen"
+      ],
+      "title": "Speicherverbände warnen vor Ausbaustopp durch Speichernetzentgelte",
+      "url": "https://www.bne-online.de/gemeinsame-stellungnahme-von-bne-und-bves-zukunftsfaehige-speichernetzentgelte-statt-ausbaustopp/",
+      "summary": "BVES und bne fordern in einer gemeinsamen Stellungnahme zukunftsfähige Speichernetzentgelte und Vertrauensschutz für bereits geplante Batteriespeicher.",
+      "why": "Zeigt die Gegenposition der Speicherbranche. Relevant für die Einschätzung, wie sich Anschlussanfragen von Speichern entwickeln.",
+      "check": [],
+      "next": "Kein Handlungsbedarf.",
+      "docs": [
+        {
+          "title": "Stellungnahme „Orientierungspunkte: Speicherentgelte“",
+          "type": "Stellungnahme",
+          "org": "BVES / bne",
+          "date": "2026-02-27",
+          "fmt": "PDF",
+          "url": "https://www.bne-online.de/wp-content/uploads/20260227_BVES_BNE_Stellungnahme_Speichernetzentgelte_final.pdf"
+        },
+        {
+          "title": "Pressemitteilung AgNes Speicherentgelte",
+          "type": "Pressemitteilung",
+          "org": "BVES",
+          "date": "2026-03-02",
+          "fmt": "PDF",
+          "url": "https://www.bves.de/wp-content/uploads/2026/03/20260302_BVES_PM_AgNes_Speicherentgelte.pdf"
+        }
+      ]
+    },
+    {
+      "stage": 1,
+      "date": "2026-02-20",
+      "source": "BMWE",
+      "ref": "",
+      "topics": [
+        "Netzanschluss",
+        "Redispatch",
+        "Baukostenzuschuss",
+        "Gesetzgebung"
+      ],
+      "title": "Referentenentwurf Netzpaket: Priorisierung statt Windhundprinzip, Baukostenzuschüsse für EE",
+      "url": "https://www.pv-magazine.de/2026/02/20/netzpaket-was-der-referentenentwurf-fuer-netzanschluss-redispatch-2-0-und-erneuerbaren-projekte-bedeuten-koennte/",
+      "summary": "Netzbetreiber sollen Anschlussbegehren nach Kriterien priorisieren und Kapazitäten reservieren dürfen, erstmals Baukostenzuschüsse für EE-Anlagen erheben und digitale Anschlussportale anbieten. Gebiete mit über 3 % Abregelung können als kapazitätslimitiert ausgewiesen werden.",
+      "why": "Erster Gesetzestext zur Neuordnung des Netzanschlusses. Priorisierung, Reservierung und Baukostenzuschuss betreffen den Anschlussprozess der ÜNB direkt.",
+      "check": [
+        "Verhältnis zum ÜNB-Reifegradverfahren",
+        "Anforderungen an Portale und Statusupdates alle drei Monate",
+        "Bemessung der Baukostenzuschüsse für EE"
+      ],
+      "next": "Stellungnahme über Verbände einbringen, Prozessanpassungen vorbereiten.",
+      "docs": [
+        {
+          "title": "Referentenentwurf Netzanschlusspaket (Stand 13.01.2026)",
+          "type": "Referentenentwurf",
+          "org": "BMWE",
+          "date": "2026-01-13",
+          "fmt": "PDF",
+          "url": "https://klimareporter.de/images/dokumente/2026/02/referentenentwurf-netzanschlusspaket.pdf"
+        }
+      ]
+    },
+    {
+      "stage": 1,
+      "date": "2026-02-05",
+      "source": "4 ÜNB",
+      "ref": "",
+      "topics": [
+        "Netzanschluss",
+        "Speicher"
+      ],
+      "title": "ÜNB stellen Reifegradverfahren für Netzanschlüsse vor: „first ready“ statt „first come“",
+      "url": "https://www.goerg.de/de/aktuelles/veroeffentlichungen/27-02-2026/first-ready-statt-first-come-uebertragungsnetzbetreiber-stellen-neues-netzanschlussverfahren-vor",
+      "summary": "Ab 1. April 2026 vergeben die vier ÜNB Anschlusskapazität für Speicher, Rechenzentren, Elektrolyseure und Industrie nach Reifegrad. Der Zyklus dauert zehn Monate. Bewertet werden Fläche und Genehmigung, technische Planung, Leistungsfähigkeit des Antragstellers sowie Netz- und Systemnutzen. Antragsgebühr 50.000 €, Sicherheit 1.500 €/MW.",
+      "why": "Grundlegend neuer Anschlussprozess für alle Nicht-EE-Anschlüsse im Übertragungsnetz.",
+      "check": [
+        "Umgang mit Anfragen aus dem alten Verfahren",
+        "Transparenz der Bewertung gegenüber abgelehnten Antragstellern",
+        "Rechtssicherheit bis zur gesetzlichen Grundlage im Netzpaket"
+      ],
+      "next": "Prozess, Fristen und Kommunikation gegenüber Antragstellern festlegen.",
+      "docs": [
+        {
+          "title": "Reifegradverfahren für Netzanschlüsse an das Übertragungsnetz – Dokumentation V1.00",
+          "type": "Konzept",
+          "org": "4 ÜNB",
+          "date": "2026-02-05",
+          "fmt": "PDF",
+          "url": "https://www.netztransparenz.de/Portals/1/Dokumente/Presse/2026/2026-02-05_Vier_Uebertragungsnetzbetreiber_Reifegradverfahren_Dokumentation_V100.pdf"
+        }
+      ]
+    },
+    {
+      "stage": 1,
+      "date": "2026-01-30",
+      "source": "Bundesnetzagentur",
+      "ref": "GBK-25-01-1#2",
+      "topics": [
+        "Regulierungsrahmen",
+        "Netzentgelte"
+      ],
+      "title": "Regulierungsrahmen für ÜNB: Konsultation zum Festlegungsentwurf endet",
+      "url": "https://www.bundesnetzagentur.de/DE/Beschlusskammern/GBK/Ebene1_Rahmen/UENB/start.html",
+      "summary": "Der Entwurf regelt die jährliche Plankostenbestimmung, die Kapitalverzinsung und einen Glättungsmechanismus für Netzentgelte. Konsultiert wurden u. a. die Meldefristen für marktabhängige Kosten und die Wesentlichkeitsschwelle von 20 Mio. € bzw. 10 %.",
+      "why": "Legt die Erlös- und Kostenregulierung der ÜNB für die kommenden Jahre fest. Höchste wirtschaftliche Relevanz.",
+      "check": [
+        "Eigenkapitalverzinsung und Fremdkapitalkosten",
+        "Planbarkeit durch den Glättungsmechanismus",
+        "Fristen für Kostenmeldungen"
+      ],
+      "next": "Finale Festlegung abwarten und Auswirkungen auf Planung bewerten.",
+      "docs": [
+        {
+          "title": "Festlegungsentwurf zukünftiger Regulierungsrahmen ÜNB",
+          "type": "Festlegungsentwurf",
+          "org": "Bundesnetzagentur",
+          "date": "2025-12-16",
+          "fmt": "Web",
+          "url": "https://www.bundesnetzagentur.de/DE/Beschlusskammern/1_GZ/GBK-GZ/2025/GBK-25-01-1x2_UENB/Downloads/GBK-25-01-1x2_FL-Entwurf_UENB_DL.html"
+        },
+        {
+          "title": "Kurzfassung der wesentlichen Inhalte",
+          "type": "Kurzinfo",
+          "org": "Bundesnetzagentur",
+          "date": "2025-12-16",
+          "fmt": "Web",
+          "url": "https://www.bundesnetzagentur.de/DE/Beschlusskammern/1_GZ/GBK-GZ/2025/GBK-25-01-1x2_UENB/Downloads/GBK-25-01-1x2_Kurzfassung_UENB_DL.html"
+        },
+        {
+          "title": "Gemeinsame Stellungnahme der vier ÜNB (Begleitschreiben)",
+          "type": "Stellungnahme",
+          "org": "4 ÜNB",
+          "date": "2026-01-30",
+          "fmt": "PDF",
+          "url": "https://www.bundesnetzagentur.de/DE/Beschlusskammern/1_GZ/GBK-GZ/2025/GBK-25-01-1x2_UENB/Stellungnahmen/FL-Entwurf/Stellungnahmen/4UENB.pdf"
+        },
+        {
+          "title": "Stellungnahme BDEW",
+          "type": "Stellungnahme",
+          "org": "BDEW",
+          "date": "2026-01-30",
+          "fmt": "PDF",
+          "url": "https://www.bundesnetzagentur.de/DE/Beschlusskammern/1_GZ/GBK-GZ/2025/GBK-25-01-1x2_UENB/Stellungnahmen/FL-Entwurf/Stellungnahmen/Verbaende_BDEW.pdf"
+        },
+        {
+          "title": "Stellungnahme Bundeskartellamt",
+          "type": "Stellungnahme",
+          "org": "Bundeskartellamt",
+          "date": "2026-01-30",
+          "fmt": "PDF",
+          "url": "https://www.bundesnetzagentur.de/DE/Beschlusskammern/1_GZ/GBK-GZ/2025/GBK-25-01-1x2_UENB/Stellungnahmen/FL-Entwurf/Stellungnahmen/Sonstige_BKartA.pdf"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "date": "2026-01-22",
+      "source": "BMWE / Bundesnetzagentur",
+      "ref": "",
+      "topics": [
+        "Systemstabilität",
+        "Systemdienstleistungen"
+      ],
+      "title": "Momentanreserve wird seit 22. Januar marktgestützt beschafft",
+      "url": "https://energiewende.bundeswirtschaftsministerium.de/EWD/Redaktion/Newsletter/2026/02/Meldung/news2.html",
+      "summary": "Nach Vorgaben der BNetzA beschaffen die ÜNB Momentanreserve jetzt über den Markt. Auch Speicher und Erneuerbare mit netzbildenden Umrichtern können teilnehmen. Das FNN hat die technischen Anforderungen aktualisiert.",
+      "why": "Neue Systemdienstleistung, die ÜNB selbst beschaffen. Ersetzt schrittweise die Trägheit konventioneller Kraftwerke.",
+      "check": [
+        "Ausreichende Präqualifikation und Liquidität im neuen Markt?",
+        "Kostenwälzung über die Netzentgelte"
+      ],
+      "next": "Beschaffungsergebnisse beobachten.",
+      "docs": []
+    },
+    {
+      "stage": 3,
+      "date": "2026-01-16",
+      "source": "BVES",
+      "ref": "GBK-25-01-1#3",
+      "topics": [
+        "Netzentgelte",
+        "AgNes",
+        "Speicher",
+        "Positionen"
+      ],
+      "title": "BVES nimmt Stellung zu den AgNes-Orientierungspunkten",
+      "url": "https://www.bves.de/wp-content/uploads/2026/02/20260116_Stellungnahme-AgNes_Allgemeine-Netzentgeltkomponenten_BVES.pdf",
+      "summary": "Der Speicherverband kommentiert die Orientierungspunkte der BNetzA zu den allgemeinen Netzentgeltkomponenten und fordert eine speicherfreundliche Ausgestaltung.",
+      "why": "Frühe Branchenposition im AgNes-Verfahren.",
+      "check": [],
+      "next": "Kein Handlungsbedarf.",
+      "docs": [
+        {
+          "title": "Stellungnahme zu den Orientierungspunkten: allgemeine Netzentgeltkomponenten",
+          "type": "Stellungnahme",
+          "org": "BVES",
+          "date": "2026-01-16",
+          "fmt": "PDF",
+          "url": "https://www.bves.de/wp-content/uploads/2026/02/20260116_Stellungnahme-AgNes_Allgemeine-Netzentgeltkomponenten_BVES.pdf"
+        }
+      ]
+    }
+  ]
+}

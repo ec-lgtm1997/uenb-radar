@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>ÜNB-Radar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --bg:#f5f7f9; --paper:#ffffff; --ink:#122029; --ink-2:#3c4a55; --muted:#6a7782; --line:#dde3e8;
+  --accent:#0b5566; --accent-soft:#e3eff1;
+  --red:#b3372b; --amber:#a86a0c; --green:#2f7a4c; --grey:#7c8791;
+  --f-display:"IBM Plex Sans Condensed","Arial Narrow",Arial,sans-serif;
+  --f-body:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#0f161b; --paper:#151e24; --ink:#e6ecef; --ink-2:#b9c4cb; --muted:#8795a0; --line:#26323a;
+    --accent:#6fb8c6; --accent-soft:#16303a;
+    --red:#ea7a6e; --amber:#e0a84c; --green:#6cc190; --grey:#8f9aa3;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#0f161b; --paper:#151e24; --ink:#e6ecef; --ink-2:#b9c4cb; --muted:#8795a0; --line:#26323a;
+  --accent:#6fb8c6; --accent-soft:#16303a;
+  --red:#ea7a6e; --amber:#e0a84c; --green:#6cc190; --grey:#8f9aa3;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--f-body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.page{max-width:1120px;margin:0 auto;padding-inline:20px;padding-block:0 64px}
+
+.mast{display:flex;justify-content:space-between;align-items:center;gap:12px 24px;flex-wrap:wrap;padding-block:24px 18px}
+.logo{font-family:var(--f-display);font-weight:600;font-size:22px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.nav{display:flex;gap:22px;font-size:15px}
+.nav button{background:none;border:0;padding:4px 0;font:500 15px var(--f-body);color:var(--muted);cursor:pointer;border-bottom:2px solid transparent}
+.nav button[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+.nav .c{font-family:var(--f-mono);font-size:12px;margin-left:5px;opacity:.75}
+.issue{font-family:var(--f-mono);font-size:12.5px;color:var(--muted)}
+
+.lead{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:28px 32px;display:grid;grid-template-columns:1fr auto;gap:24px 40px;align-items:end}
+.eyebrow{font-family:var(--f-mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin:0 0 10px}
+.lead h1{font-family:var(--f-display);font-weight:600;font-size:clamp(28px,4.2vw,40px);line-height:1.12;letter-spacing:-.015em;margin:0 0 14px;text-wrap:balance}
+.lead p{margin:0;color:var(--ink-2);max-width:62ch}
+.tally{display:grid;grid-template-columns:repeat(2,auto);gap:8px 22px;font-size:14px}
+.tally div{display:flex;align-items:baseline;gap:8px;white-space:nowrap}
+.tally b{font-family:var(--f-mono);font-weight:500;font-size:20px;font-variant-numeric:tabular-nums;min-width:1.2ch}
+.phead h1{font-family:var(--f-display);font-weight:600;font-size:clamp(26px,3.6vw,34px);line-height:1.15;margin:8px 0 6px}
+.phead p{margin:0;color:var(--ink-2);max-width:70ch}
+
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:14px;margin-top:8px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;border-bottom:1px solid var(--line)}
+.seg{display:flex;gap:2px;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:3px;overflow-x:auto;scrollbar-width:none;max-width:100%}
+.seg::-webkit-scrollbar{display:none}
+.seg button{border:0;background:none;color:var(--ink-2);font:500 13.5px var(--f-body);padding:6px 12px;border-radius:4px;cursor:pointer;white-space:nowrap;display:flex;gap:7px;align-items:center}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.seg .c{font-family:var(--f-mono);font-size:12px;opacity:.7;font-variant-numeric:tabular-nums}
+.tools{display:flex;gap:8px;flex:1;min-width:240px}
+select,input[type=search]{font:14px var(--f-body);color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:8px 10px;min-width:0}
+input[type=search]{flex:1}
+select:focus-visible,input:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:48px;margin-top:8px}
+.group h2{font-family:var(--f-mono);font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:32px 0 4px;display:flex;align-items:center;gap:10px}
+.sq{width:9px;height:9px;flex:none;background:var(--c);display:inline-block}
+.item{padding-block:22px;border-bottom:1px solid var(--line)}
+.item:last-child{border-bottom:0}
+.meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-family:var(--f-mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;align-items:center}
+.meta .lvl{color:var(--c);display:flex;align-items:center;gap:7px;text-transform:uppercase;letter-spacing:.06em}
+.item h3{font-family:var(--f-display);font-weight:600;font-size:21px;line-height:1.28;margin:8px 0 8px;text-wrap:balance}
+.item h3 a{text-decoration:none}
+.item h3 a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.sum{margin:0;color:var(--ink-2);max-width:68ch}
+
+.docs{list-style:none;margin:14px 0 0;padding:0;border-top:1px solid var(--line)}
+.docs li{border-bottom:1px solid var(--line)}
+.docs a{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:9px 2px;text-decoration:none}
+.docs a:hover .dt{text-decoration:underline;text-underline-offset:3px}
+.fmt{font-family:var(--f-mono);font-size:10.5px;font-weight:500;letter-spacing:.05em;color:var(--accent);border:1px solid currentColor;border-radius:2px;text-align:center;padding:0 3px;line-height:1.6}
+.dt{font-size:14.5px;line-height:1.4}
+.dm{font-family:var(--f-mono);font-size:11.5px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.dsub{display:block;font-family:var(--f-mono);font-size:11.5px;color:var(--muted);margin-top:2px}
+
+.row{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin-top:14px}
+.topics{display:flex;flex-wrap:wrap;gap:6px}
+.topics button{font:12.5px var(--f-body);color:var(--muted);background:none;border:1px solid var(--line);border-radius:3px;padding:1px 8px;cursor:pointer}
+.topics button:hover{color:var(--ink);border-color:var(--muted)}
+details{margin-top:14px}
+summary{cursor:pointer;list-style:none;font-size:14px;font-weight:500;color:var(--accent);display:inline-flex;align-items:center;gap:6px}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"";width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(-45deg);transition:transform .15s}
+details[open] summary::before{transform:rotate(45deg) translate(-2px,-1px)}
+.assess{margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:18px 28px;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:18px 20px}
+.assess h4{font-family:var(--f-mono);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 6px}
+.assess p,.assess ul{margin:0;font-size:14.5px;line-height:1.55}
+.assess ul{padding-left:1.1em}
+.assess li+li{margin-top:4px}
+.assess .next{grid-column:1/-1;border-top:1px solid var(--line);padding-top:14px}
+.src{font-size:13px;color:var(--muted)}
+.src a{color:var(--accent)}
+.empty{padding:40px 0;color:var(--muted)}
+
+.rail{position:sticky;top:calc(env(safe-area-inset-top,0px) + 84px);align-self:start;display:grid;gap:28px;padding-top:32px}
+.rail h2{font-family:var(--f-mono);font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:0 0 12px}
+.dl{list-style:none;margin:0;padding:0;border-left:1px solid var(--line)}
+.dl li{position:relative;padding:0 0 16px 16px}
+.dl li::before{content:"";position:absolute;left:-4px;top:7px;width:7px;height:7px;border-radius:50%;background:var(--paper);border:1.5px solid var(--accent)}
+.dl li.past{opacity:.55}
+.dl li.past::before{background:var(--line);border-color:var(--line)}
+.dl time{display:block;font-family:var(--f-mono);font-size:12.5px;color:var(--accent);font-variant-numeric:tabular-nums}
+.dl span{font-size:14px;line-height:1.45;display:block}
+.scale{display:grid;gap:10px;font-size:13.5px;color:var(--ink-2)}
+.scale div{display:grid;grid-template-columns:9px 1fr;gap:10px;align-items:baseline}
+.scale b{color:var(--ink);font-weight:600}
+.months{display:grid;gap:2px;font-size:14px}
+.months button{display:flex;justify-content:space-between;background:none;border:0;padding:5px 0;color:var(--ink-2);font:inherit;cursor:pointer;text-align:left;border-bottom:1px solid var(--line)}
+.months button:hover{color:var(--ink)}
+.months span:last-child{font-family:var(--f-mono);font-size:12.5px;color:var(--muted)}
+
+/* Dokumente */
+.dtable{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:8px}
+.dtable th{font-family:var(--f-mono);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);text-align:left;padding:14px 12px 8px 0;border-bottom:1px solid var(--ink);white-space:nowrap}
+.dtable td{padding:12px 12px 12px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.dtable td.d{font-family:var(--f-mono);font-size:12.5px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.dtable a.t{text-decoration:none;font-weight:500}
+.dtable a.t:hover{text-decoration:underline;text-underline-offset:3px}
+.dtable .ctx{display:block;font-size:13px;color:var(--muted);margin-top:3px}
+.dtable .ctx button{background:none;border:0;padding:0;font:inherit;color:var(--accent);cursor:pointer;text-align:left}
+.dtable .org{white-space:nowrap}
+.dtable .fmt{display:inline-block}
+.dcount{font-family:var(--f-mono);font-size:12.5px;color:var(--muted);margin-left:auto}
+
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+footer p{margin:0;max-width:70ch}
+
+@media (max-width:900px){
+  .cols{grid-template-columns:1fr;gap:0}
+  .rail{position:static;padding-top:40px;border-top:1px solid var(--line);margin-top:24px}
+}
+@media (max-width:640px){
+  .page{padding-inline:16px}
+  .mast{padding-block:18px 12px}
+  .nav{order:3;width:100%;gap:20px;border-bottom:1px solid var(--line)}
+  .lead{grid-template-columns:1fr;padding:22px 20px}
+  .assess{grid-template-columns:1fr;padding:16px}
+  .item h3{font-size:19px}
+  .tools{min-width:100%}
+  select{max-width:42%}
+  .tools{flex-wrap:wrap}
+  .tools select{flex:1;max-width:none}
+  input[type=search]{flex-basis:100%}
+  .docs a{grid-template-columns:40px minmax(0,1fr)}
+  .docs .dm{grid-column:2;margin-top:-4px}
+  .dtable thead{display:none}
+  .dtable tr{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .dtable td{border:0;padding:0}
+  .dtable td.d{grid-row:1;grid-column:1}
+  .dtable td.ty{grid-row:1;grid-column:2;font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+  .dtable td.ti{grid-column:1/-1}
+  .dtable td.or{grid-column:1/-1;font-size:13px;color:var(--muted)}
+  .dtable td.fm{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="mast">
+    <div class="logo">
+      <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5 L4 20.5 M11 1.5 L18 20.5 M6.2 14.5 H15.8 M7.9 9.5 H14.1 M3 9.5 H19" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round"/></svg>
+      ÜNB-Radar
+    </div>
+    <nav class="nav" id="nav" aria-label="Ansicht"></nav>
+    <div class="issue" id="issue"></div>
+  </header>
+
+  <div id="head"></div>
+
+  <div class="bar" id="bar"></div>
+
+  <div class="cols">
+    <main id="main"></main>
+    <aside class="rail" id="rail"></aside>
+  </div>
+
+  <footer>
+    <p>Zusammenfassungen und Einstufungen werden automatisiert aus öffentlichen Quellen erstellt und können Fehler enthalten. Maßgeblich ist die verlinkte Originalquelle. Die Einordnung erfolgt aus Sicht eines Übertragungsnetzbetreibers allgemein.</p>
+    <p id="stand"></p>
+  </footer>
+</div>
+
+<script>
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(DATA=>{window.DATA=DATA;start()}).catch(()=>{document.getElementById("main").innerHTML='<p class="empty">Daten konnten nicht geladen werden. Bitte Seite neu laden.</p>'});
+function start(){
+
+const STAGES={1:{label:"Handlungsbedarf",c:"--red"},2:{label:"Beobachten",c:"--amber"},3:{label:"Nice to know",c:"--green"},4:{label:"Unwichtig",c:"--grey"}};
+const MONTHS=["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"];
+const state={view:"aktuell",stage:0,topic:"",q:"",dtype:"",dorg:""};
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+const d=(iso,o={day:"2-digit",month:"2-digit",year:"numeric"})=>iso?new Date(iso+"T12:00:00").toLocaleDateString("de-DE",o):"";
+const host=u=>{try{return new URL(u).hostname.replace(/^www\./,"")}catch{return ""}};
+const shown=(x)=>x.dateDisplay||d(x.date)||"–";
+const daysBetween=(a,b)=>(new Date(a)-new Date(b))/864e5;
+
+// Items get a stable id; docs get a back-reference
+DATA.items.forEach((it,i)=>{it.id="m"+i;(it.docs||[]).forEach(doc=>doc.item=it)});
+const ALLDOCS=DATA.items.flatMap(i=>i.docs||[]).sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+const CURRENT=DATA.items.filter(i=>daysBetween(DATA.updated,i.date)<=31);
+
+const VIEWS=[["aktuell","Aktuell",CURRENT.length],["archiv","Archiv 2026",DATA.items.length],["dokumente","Dokumente",ALLDOCS.length]];
+
+$("#issue").textContent=`${DATA.issue} · ${d(DATA.updated,{day:"numeric",month:"long",year:"numeric"})}`;
+$("#stand").textContent=`Stand: ${d(DATA.updated)} · Erscheint montags`;
+
+function renderNav(){
+  $("#nav").innerHTML=VIEWS.map(([k,l,n])=>`<button type="button" data-v="${k}" ${state.view===k?'aria-current="page"':""}>${l}<span class="c">${n}</span></button>`).join("");
+}
+$("#nav").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;state.view=b.dataset.v;state.stage=0;state.topic="";state.q="";state.dtype="";state.dorg="";render();window.scrollTo({top:0})});
+
+function pool(){return state.view==="aktuell"?CURRENT:DATA.items}
+const count=(list,k)=>list.filter(i=>i.stage==k).length;
+
+function renderHead(){
+  if(state.view==="aktuell"){
+    $("#head").innerHTML=`<section class="lead"><div><p class="eyebrow">Wochenbriefing Regulierung &amp; Gesetzgebung</p><h1>${esc(DATA.lead.title)}</h1><p>${esc(DATA.lead.text)}</p></div>
+    <div class="tally" aria-label="Meldungen der letzten vier Wochen nach Einstufung">${Object.entries(STAGES).map(([k,s])=>`<div><b>${count(CURRENT,k)}</b><span class="sq" style="--c:var(${s.c})"></span>${s.label}</div>`).join("")}</div></section>`;
+  }else if(state.view==="archiv"){
+    $("#head").innerHTML=`<section class="phead"><p class="eyebrow">Archiv</p><h1>Alle Meldungen 2026</h1><p>${DATA.items.length} Meldungen seit Januar, nach Monat sortiert. Filter nach Einstufung, Thema oder Stichwort.</p></section>`;
+  }else{
+    $("#head").innerHTML=`<section class="phead"><p class="eyebrow">Dokumente</p><h1>Originaldokumente 2026</h1><p>Gesetzentwürfe, Festlegungen, Stellungnahmen und Positionspapiere aus allen Meldungen. Jeder Eintrag führt direkt zum Dokument und zur zugehörigen Meldung.</p></section>`;
+  }
+}
+
+function renderBar(){
+  if(state.view==="dokumente"){
+    const types=[...new Set(ALLDOCS.map(x=>x.type))].sort((a,b)=>a.localeCompare(b,"de"));
+    const orgs=[...new Set(ALLDOCS.map(x=>x.org))].sort((a,b)=>a.localeCompare(b,"de"));
+    $("#bar").innerHTML=`<div class="tools">
+      <select id="dtype" aria-label="Dokumenttyp"><option value="">Alle Typen</option>${types.map(t=>`<option ${state.dtype===t?"selected":""}>${esc(t)}</option>`).join("")}</select>
+      <select id="dorg" aria-label="Herausgeber"><option value="">Alle Herausgeber</option>${orgs.map(t=>`<option ${state.dorg===t?"selected":""}>${esc(t)}</option>`).join("")}</select>
+      <input type="search" id="q" placeholder="Dokumente durchsuchen" aria-label="Dokumente durchsuchen" value="${esc(state.q)}">
+    </div>`;
+    $("#dtype").onchange=e=>{state.dtype=e.target.value;renderMain()};
+    $("#dorg").onchange=e=>{state.dorg=e.target.value;renderMain()};
+  }else{
+    const list=pool();
+    const topics=[...new Set(list.flatMap(i=>i.topics))].sort((a,b)=>a.localeCompare(b,"de"));
+    const opts=[[0,"Alle",list.length],...Object.entries(STAGES).map(([k,s])=>[+k,s.label,count(list,k)])];
+    $("#bar").innerHTML=`<div class="seg" role="group" aria-label="Nach Einstufung filtern">${opts.map(([k,l,n])=>`<button type="button" data-k="${k}" aria-pressed="${state.stage===k}">${l}<span class="c">${n}</span></button>`).join("")}</div>
+    <div class="tools">
+      <select id="topic" aria-label="Thema"><option value="">Alle Themen</option>${topics.map(t=>`<option ${state.topic===t?"selected":""}>${esc(t)}</option>`).join("")}</select>
+      <input type="search" id="q" placeholder="Suchen" aria-label="Meldungen durchsuchen" value="${esc(state.q)}">
+    </div>`;
+    $("#bar .seg").onclick=e=>{const b=e.target.closest("button");if(!b)return;state.stage=+b.dataset.k;renderBar();renderMain()};
+    $("#topic").onchange=e=>{state.topic=e.target.value;renderMain()};
+  }
+  $("#q").oninput=e=>{state.q=e.target.value.trim().toLowerCase();renderMain()};
+}
+
+function docList(docs){
+  if(!docs||!docs.length)return"";
+  return `<ul class="docs" aria-label="Dokumente">${docs.map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener"><span class="fmt">${esc(x.fmt)}</span><span class="dt">${esc(x.title)}<span class="dsub">${esc(x.type)} · ${esc(x.org)}</span></span><span class="dm">${esc(shown(x))}</span></a></li>`).join("")}</ul>`;
+}
+function itemHTML(i,showLevel){
+  const s=STAGES[i.stage];
+  return `<article class="item" id="${i.id}" style="--c:var(${s.c})">
+    <div class="meta"><span class="lvl"><span class="sq"></span>${showLevel?s.label:""}</span><span>${esc(i.dateDisplay||d(i.date))}</span><span>${esc(i.source)}</span>${i.ref?`<span>${esc(i.ref)}</span>`:""}</div>
+    <h3><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a></h3>
+    <p class="sum">${esc(i.summary)}</p>
+    ${docList(i.docs)}
+    <details${i.stage===1&&state.view==="aktuell"?" open":""}>
+      <summary>Einordnung</summary>
+      <div class="assess">
+        <div><h4>Relevanz für ÜNB</h4><p>${esc(i.why)}</p></div>
+        ${i.check.length?`<div><h4>Kritisch prüfen</h4><ul>${i.check.map(c=>`<li>${esc(c)}</li>`).join("")}</ul></div>`:""}
+        <div class="next"><h4>Nächster Schritt</h4><p>${esc(i.next)}</p></div>
+      </div>
+    </details>
+    <div class="row"><div class="topics">${i.topics.map(t=>`<button type="button" data-t="${esc(t)}">${esc(t)}</button>`).join("")}</div><span class="src">Quelle: <a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(host(i.url))}</a></span></div>
+  </article>`;
+}
+
+function filteredItems(){
+  const q=state.q;
+  return pool()
+    .filter(i=>!state.stage||i.stage===state.stage)
+    .filter(i=>!state.topic||i.topics.includes(state.topic))
+    .filter(i=>!q||[i.title,i.summary,i.why,i.source,i.ref,...i.topics,...(i.docs||[]).map(x=>x.title+" "+x.org)].join(" ").toLowerCase().includes(q));
+}
+
+function renderMain(){
+  if(state.view==="dokumente")return renderDocs();
+  const list=filteredItems();
+  if(!list.length){$("#main").innerHTML=`<p class="empty">Keine Meldungen für diese Auswahl.</p>`;return}
+  if(state.view==="aktuell"){
+    const sorted=[...list].sort((a,b)=>a.stage-b.stage||b.date.localeCompare(a.date));
+    const groups=[1,2,3,4].map(k=>[k,sorted.filter(i=>i.stage===k)]).filter(([,a])=>a.length);
+    $("#main").innerHTML=groups.map(([k,a])=>`<section class="group" style="--c:var(${STAGES[k].c})"><h2><span class="sq"></span>${STAGES[k].label} · ${a.length}</h2>${a.map(i=>itemHTML(i,false)).join("")}</section>`).join("");
+  }else{
+    const sorted=[...list].sort((a,b)=>b.date.localeCompare(a.date));
+    const byMonth=new Map();
+    sorted.forEach(i=>{const m=+i.date.slice(5,7)-1;if(!byMonth.has(m))byMonth.set(m,[]);byMonth.get(m).push(i)});
+    $("#main").innerHTML=[...byMonth].map(([m,a])=>`<section class="group" id="monat-${m}"><h2>${MONTHS[m]} 2026 · ${a.length}</h2>${a.map(i=>itemHTML(i,true)).join("")}</section>`).join("");
+  }
+}
+
+function renderDocs(){
+  const q=state.q;
+  const list=ALLDOCS
+    .filter(x=>!state.dtype||x.type===state.dtype)
+    .filter(x=>!state.dorg||x.org===state.dorg)
+    .filter(x=>!q||[x.title,x.type,x.org,x.item.title].join(" ").toLowerCase().includes(q));
+  if(!list.length){$("#main").innerHTML=`<p class="empty">Keine Dokumente für diese Auswahl.</p>`;return}
+  $("#main").innerHTML=`<table class="dtable"><thead><tr><th>Datum</th><th>Dokument</th><th>Typ</th><th>Herausgeber</th><th>Format</th></tr></thead><tbody>
+  ${list.map(x=>`<tr>
+    <td class="d">${esc(shown(x))}</td>
+    <td class="ti"><a class="t" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a><span class="ctx">Zur Meldung: <button type="button" data-goto="${x.item.id}">${esc(x.item.title)}</button></span></td>
+    <td class="ty">${esc(x.type)}</td>
+    <td class="or org">${esc(x.org)}</td>
+    <td class="fm"><span class="fmt">${esc(x.fmt)}</span></td>
+  </tr>`).join("")}</tbody></table>`;
+}
+
+function renderRail(){
+  const today=DATA.updated;
+  const dl=`<section><h2>Fristen &amp; Termine</h2><ol class="dl">${DATA.deadlines.map(x=>`<li class="${x.date<today?"past":""}"><time datetime="${x.date}">${esc(x.display||d(x.date))}</time><span>${esc(x.label)}</span></li>`).join("")}</ol></section>`;
+  const scale=`<section><h2>Einstufung</h2><div class="scale">
+    <div><span class="sq" style="--c:var(--red)"></span><span><b>Handlungsbedarf</b> · Pflichten, Fristen oder Kosten absehbar. Jetzt prüfen.</span></div>
+    <div><span class="sq" style="--c:var(--amber)"></span><span><b>Beobachten</b> · Relevant, aber noch im Verfahren.</span></div>
+    <div><span class="sq" style="--c:var(--green)"></span><span><b>Nice to know</b> · Kontext und Marktdaten.</span></div>
+    <div><span class="sq" style="--c:var(--grey)"></span><span><b>Unwichtig</b> · Nur am Rande relevant.</span></div></div></section>`;
+  if(state.view==="archiv"){
+    const m=new Map();DATA.items.forEach(i=>{const k=+i.date.slice(5,7)-1;m.set(k,(m.get(k)||0)+1)});
+    const months=`<section><h2>Monate</h2><div class="months">${[...m].sort((a,b)=>b[0]-a[0]).map(([k,n])=>`<button type="button" data-month="${k}"><span>${MONTHS[k]}</span><span>${n}</span></button>`).join("")}</div></section>`;
+    $("#rail").innerHTML=months+dl;
+  }else if(state.view==="dokumente"){
+    const t=new Map();ALLDOCS.forEach(x=>t.set(x.type,(t.get(x.type)||0)+1));
+    $("#rail").innerHTML=`<section><h2>Nach Typ</h2><div class="months">${[...t].sort((a,b)=>b[1]-a[1]).map(([k,n])=>`<button type="button" data-type="${esc(k)}"><span>${esc(k)}</span><span>${n}</span></button>`).join("")}</div></section>`+dl;
+  }else{
+    $("#rail").innerHTML=dl+scale;
+  }
+}
+$("#rail").addEventListener("click",e=>{
+  const b=e.target.closest("button");if(!b)return;
+  if(b.dataset.month){state.stage=0;state.topic="";state.q="";renderBar();renderMain();document.getElementById("monat-"+b.dataset.month)?.scrollIntoView({behavior:"smooth"})}
+  if(b.dataset.type){state.dtype=b.dataset.type;renderBar();renderMain();window.scrollTo({top:$("#bar").offsetTop,behavior:"smooth"})}
+});
+$("#main").addEventListener("click",e=>{
+  const t=e.target.closest(".topics button");
+  if(t){state.topic=t.dataset.t;renderBar();renderMain();window.scrollTo({top:$("#bar").offsetTop,behavior:"smooth"});return}
+  const g=e.target.closest("[data-goto]");
+  if(g){const id=g.dataset.goto;state.view="archiv";state.dtype="";state.dorg="";state.q="";render();const el=document.getElementById(id);if(el){el.querySelector("details").open=true;el.scrollIntoView({behavior:"smooth"})}}
+});
+
+function render(){renderNav();renderHead();renderBar();renderMain();renderRail()}
+render();
+}
+</script>
+</body>
+</html>
