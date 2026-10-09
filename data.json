@@ -1,23 +1,40 @@
 {
-  "issue": "Ausgabe 39 / 2026",
-  "updated": "2026-09-24",
+  "issue": "Ausgabe 41 / 2026",
+  "updated": "2026-10-09",
   "lead": {
-    "title": "Netzpaket im Bundestag, Offshore-Reform im Kabinett",
-    "text": "Die Reform des Netzanschlussverfahrens ist in der ersten Lesung und geht jetzt in die Ausschussberatung. Das Kabinett hat die WindSeeG-Novelle mit Differenzverträgen und stärkerer Überbauung der Netzanbindungen beschlossen. Der Bundeszuschuss zu den Übertragungsnetzkosten soll bis 2029 weiterlaufen."
+    "title": "Netzpaket nach der Anhörung, ÜNB-Zuschuss und WindSeeG in erster Lesung",
+    "text": "Der Wirtschaftsausschuss hat am 7. Oktober zum Netzpaket angehört, die Anhörung zur EEG-Novelle fand am 5. Oktober statt. Der Zuschuss zu den Übertragungsnetzkosten (5,525 Mrd. € pro Jahr für 2027 bis 2029) und die WindSeeG-Novelle standen am 8. Oktober in erster Lesung auf der Tagesordnung. Die ÜNB haben ihre vorläufigen Netzentgelte 2027 mit 3,54 ct/kWh veröffentlicht, allerdings unter dem Vorbehalt, dass der Zuschuss bis zum 7. Dezember gesetzlich geregelt ist."
   },
   "deadlines": [
     {
-      "date": "2026-09-18",
-      "label": "AgNes: Ende der Konsultation zum Festlegungsentwurf"
+      "date": "2026-09-24",
+      "label": "Netzpaket und EEG-Novelle: 1. Lesung im Bundestag"
     },
     {
-      "date": "2026-09-24",
-      "label": "Netzpaket: 1. Lesung im Bundestag"
+      "date": "2026-10-07",
+      "label": "Netzpaket: öffentliche Anhörung im Wirtschaftsausschuss"
+    },
+    {
+      "date": "2026-10-08",
+      "label": "ÜNB-Zuschuss 2027–2029 und WindSeeG-Novelle: 1. Lesung (laut Tagesordnung)"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "StromVKG: Zuschläge der ersten Ausschreibung spätestens bis"
+    },
+    {
+      "date": "2026-11-30",
+      "display": "Nov 2026",
+      "label": "EEG-Novelle: Beschluss in Bundestag und Bundesrat voraussichtlich (Verbandseinschätzung)"
     },
     {
       "date": "2026-12-01",
       "display": "Winter 26/27",
       "label": "Sicherheitsplattform Strom: erstes System geplant"
+    },
+    {
+      "date": "2026-12-07",
+      "label": "ÜNB-Zuschuss: ohne Rechtssicherheit steigen die endgültigen Netzentgelte 2027"
     },
     {
       "date": "2026-12-29",
@@ -31,7 +48,16 @@
     {
       "date": "2026-12-31",
       "display": "Ende 2026",
+      "label": "NEP Strom 2037/2045: Bestätigung durch die BNetzA geplant"
+    },
+    {
+      "date": "2026-12-31",
+      "display": "Ende 2026",
       "label": "EU Grids Package: Trilog-Einigung angestrebt"
+    },
+    {
+      "date": "2026-12-31",
+      "label": "EEG 2023: beihilferechtliche Genehmigung läuft aus"
     },
     {
       "date": "2027-01-01",
@@ -47,6 +73,264 @@
     }
   ],
   "items": [
+    {
+      "stage": 1,
+      "date": "2026-10-07",
+      "source": "Deutscher Bundestag",
+      "ref": "Drs. 21/7866",
+      "topics": [
+        "Netzanschluss",
+        "Redispatch",
+        "Gesetzgebung"
+      ],
+      "title": "Netzpaket: öffentliche Anhörung im Wirtschaftsausschuss",
+      "url": "https://www.bundestag.de/ausschuesse/a09_wirtschaft/wp21_a09_Anhoerungen/1217454-1217454",
+      "summary": "Der Ausschuss für Wirtschaft und Energie hat am 7. Oktober zum Netzanschlusspaket angehört, zusammen mit Anträgen der Grünen (21/8121) und der Linken (21/7906). Im Mittelpunkt der schriftlichen Stellungnahmen steht der Redispatch-Vorbehalt, also der entschädigungslose Redispatch von bis zu 18 bzw. 20 % der Jahreserzeugung in kapazitätslimitierten Gebieten. Prof. Müller (Stiftung Umweltenergierecht) sieht dabei erhebliche unionsrechtliche Bedenken.",
+      "why": "Die Anhörung ist die letzte größere Gelegenheit für Änderungen vor der Ausschussentscheidung. Priorisierung von Anschlussbegehren und Ausweisung kapazitätslimitierter Gebiete betreffen den Anschlussprozess der ÜNB direkt.",
+      "check": [
+        "Wie wird der Redispatch-Vorbehalt in der Ausschussphase verändert?",
+        "Wer weist kapazitätslimitierte Gebiete aus und welche Rolle haben die ÜNB dabei?",
+        "Übergang zwischen gesetzlicher Priorisierung und dem Reifegradverfahren der ÜNB"
+      ],
+      "next": "Änderungsanträge der Koalition verfolgen und die Stellungnahmen der Sachverständigen auf Punkte zu ÜNB-Pflichten auswerten.",
+      "docs": [
+        {
+          "title": "Stellungnahme zur Anhörung zum Netzanschlusspaket (Ausschussdrucksache 21(9)383)",
+          "type": "Stellungnahme",
+          "org": "Stiftung Umweltenergierecht",
+          "date": "2026-10-06",
+          "fmt": "PDF",
+          "url": "https://www.bundestag.de/resource/blob/1222794/Stellungnahme_SV_Thorsten_Mueller.pdf"
+        },
+        {
+          "title": "Tagesordnung der öffentlichen Anhörung",
+          "type": "Tagesordnung",
+          "org": "Deutscher Bundestag",
+          "date": "2026-10-07",
+          "fmt": "PDF",
+          "url": "https://www.bundestag.de/resource/blob/1217758/to_49_07-10-2026_oeA_Netzanschlusspaket.pdf"
+        }
+      ]
+    },
+    {
+      "stage": 1,
+      "date": "2026-10-01",
+      "source": "4 ÜNB",
+      "ref": "",
+      "topics": [
+        "Netzentgelte",
+        "Gesetzgebung"
+      ],
+      "title": "ÜNB veröffentlichen vorläufige Netzentgelte 2027: 3,54 ct/kWh mit Zuschuss",
+      "url": "https://www.zfk.de/unternehmen/uebertragungsnetzbetreiber-veroeffentlichen-vorlaeufige-netzentgelte-fuer-2027",
+      "summary": "50Hertz, Amprion, TenneT und TransnetBW haben die vorläufigen bundeseinheitlichen Netzentgelte für 2027 veröffentlicht. Mit dem geplanten Zuschuss von 5,525 Mrd. € liegt das durchschnittliche Entgelt auf Höchst- und Umspannungsebene bei 3,54 ct/kWh (2026: 2,86 ct/kWh), ohne Zuschuss wären es 6,52 ct/kWh. Die Werte stehen unter dem Vorbehalt, dass das Gesetz für 2027 bis 2029 verabschiedet wird. Ohne Rechtssicherheit bis zum 7. Dezember 2026 steigen die endgültigen Entgelte entsprechend.",
+      "why": "Die Entgelte stammen von den ÜNB selbst und gehen als vorgelagerte Kosten in die Kalkulation aller Verteilnetzbetreiber und Lieferanten zum 1. Januar 2027 ein. Der Gesetzgebungszeitplan entscheidet, ob die Werte Bestand haben.",
+      "check": [
+        "Ist die Verabschiedung bis zum 7. Dezember realistisch?",
+        "Kommunikation des Vorbehalts gegenüber Netzkunden und Verteilnetzbetreibern",
+        "Szenario ohne Zuschuss (6,52 ct/kWh) für Kalkulation und Kundenkommunikation"
+      ],
+      "next": "Gesetzgebungsverfahren eng verfolgen, Kommunikation zum Vorbehalt abstimmen und die endgültige Veröffentlichung vorbereiten.",
+      "docs": []
+    },
+    {
+      "stage": 2,
+      "date": "2026-10-08",
+      "source": "Deutscher Bundestag",
+      "ref": "Drs. 21/8236",
+      "topics": [
+        "Netzentgelte",
+        "Gesetzgebung"
+      ],
+      "title": "Bundestag berät Zuschuss zu den Übertragungsnetzkosten 2027 bis 2029 in erster Lesung",
+      "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw41-de-energiewirtschaftsgesetz-1217558",
+      "summary": "Der Gesetzentwurf sieht für 2027 bis 2029 jeweils 5,525 Mrd. € vor (2026: 6,5 Mrd. €), gezahlt in zehn gleichen Raten und im neuen § 24d EnWG verankert. Die Bundesregierung hat den Entwurf als besonders eilbedürftig eingestuft. Die erste Lesung stand laut Bundestag am 8. Oktober auf der Tagesordnung, 20 Minuten Debatte waren eingeplant.",
+      "why": "Rechtsgrundlage für die Entgeltkalkulation 2027. Ohne Verabschiedung bis Anfang Dezember bleiben die vorläufigen Entgelte unter Vorbehalt.",
+      "check": [
+        "Wird der Zuschuss im parlamentarischen Verfahren verändert?",
+        "Zeitplan bis zur Verabschiedung vor dem 7. Dezember",
+        "Zahlungsmodalitäten und Veröffentlichungspflichten der ÜNB im Entwurf"
+      ],
+      "next": "Ausschussberatung verfolgen und den Entwurf mit der Fassung vom 2. September abgleichen.",
+      "docs": [
+        {
+          "title": "Gesetzentwurf der Bundesregierung (Drucksache 21/8236)",
+          "type": "Gesetzentwurf",
+          "org": "Deutscher Bundestag",
+          "date": "",
+          "dateDisplay": "Sep 2026",
+          "fmt": "PDF",
+          "url": "https://dserver.bundestag.de/btd/21/082/2108236.pdf"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "date": "2026-10-08",
+      "source": "Deutscher Bundestag",
+      "ref": "Drs. 21/8238",
+      "topics": [
+        "Offshore",
+        "Netzanbindung",
+        "Gesetzgebung"
+      ],
+      "title": "WindSeeG-Novelle: Bundestag berät Überbauung der Netzanbindungen um bis zu 20 %",
+      "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw41-de-windenergie-auf-see-1217556",
+      "summary": "Der Regierungsentwurf stand am 8. Oktober in erster Lesung auf der Tagesordnung. Er erlaubt eine Überbauung der Offshore-Netzanschlüsse um bis zu 20 %, verlängert die Regellaufzeit neuer Windparks von 25 auf 35 Jahre und legt den jährlichen Ausschreibungskorridor ab 2027 auf 2.000 bis 4.800 MW fest. Am Ziel von 30 GW bis 2030 wird festgehalten. Die Bundesratsausschüsse empfehlen unter anderem, das für 2026 vorgesehene, entfallene Ausschreibungsvolumen nachzuholen.",
+      "why": "Überbauung und Ausschreibungskorridor verändern Auslegung, Auslastung und Zeitplan der Offshore-Netzanbindungen, die von den ÜNB geplant und betrieben werden.",
+      "check": [
+        "Wer trägt das Risiko abgeregelter Überbauungsmengen und wie wirkt das auf die Offshore-Netzumlage?",
+        "Abgleich mit Flächenentwicklungsplan und NEP (bis zu acht weitere Anbindungssysteme bis 2037 im NEP-Entwurf)",
+        "Offshore-Elektrolyse darf nach Auffassung der Länder nicht zulasten der Netzanbindungskapazität gehen"
+      ],
+      "next": "Ausschussberatung verfolgen und die ÜNB-Stellungnahme vom Dezember 2025 mit dem Regierungsentwurf abgleichen.",
+      "docs": [
+        {
+          "title": "Gesetzentwurf der Bundesregierung (Drucksache 21/8238)",
+          "type": "Gesetzentwurf",
+          "org": "Deutscher Bundestag",
+          "date": "2026-09-28",
+          "fmt": "PDF",
+          "url": "https://dserver.bundestag.de/btd/21/082/2108238.pdf"
+        },
+        {
+          "title": "Gesetzentwurf im Bundesrat (Drucksache 508/26)",
+          "type": "Gesetzentwurf",
+          "org": "Bundesrat",
+          "date": "2026-09-04",
+          "fmt": "PDF",
+          "url": "https://dserver.bundestag.de/brd/2026/0508-26.pdf"
+        },
+        {
+          "title": "Gemeinsame Stellungnahme der ÜNB zur WindSeeG-Novelle",
+          "type": "Stellungnahme",
+          "org": "4 ÜNB",
+          "date": "",
+          "dateDisplay": "Dez 2025",
+          "fmt": "PDF",
+          "url": "https://www.lobbyregister.bundestag.de/media/8a/e3/661353/Stellungnahme-Gutachten-SG2512180229.pdf"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "date": "2026-10-05",
+      "source": "Deutscher Bundestag",
+      "ref": "Drs. 21/7867",
+      "topics": [
+        "EEG",
+        "Netzanschluss",
+        "Gesetzgebung"
+      ],
+      "title": "EEG-Novelle 2027: Sachverständige verlangen erhebliche Nachbesserungen",
+      "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw41-pa-wirtschaft-stromsektor-1218072",
+      "summary": "Nach der ersten Lesung am 24. September hat der Wirtschaftsausschuss am 5. Oktober angehört. Industrieverbände begrüßen mehr Kosteneffizienz und Marktorientierung, Vertreter von Wind, Solar und Umweltverbänden warnen vor Verzögerungen beim Ausbau, alle Seiten verlangen Änderungen. Der Entwurf streicht die feste Einspeisevergütung für Neuanlagen, führt Differenzverträge für größere Anlagen ein, lässt Netzbetreiber nach Planungsreife und Netzdienlichkeit priorisieren und begrenzt den Entschädigungsverzicht im Redispatch auf 18 bis 20 % der Jahresstrommenge, grundsätzlich für sechs Jahre.",
+      "why": "Die Netzanschlussregeln im EEG greifen mit dem Netzpaket ineinander (Priorisierung, Redispatch-Vorbehalt). Zudem läuft die beihilferechtliche Genehmigung des EEG 2023 am 31. Dezember 2026 aus, der Zeitplan ist eng.",
+      "check": [
+        "Konsistenz von EEG-Novelle und Netzpaket bei kapazitätslimitierten Gebieten",
+        "Zeitplan bis zur Notifizierung durch die EU-Kommission",
+        "Folgen einer möglichen Förderlücke zum Jahreswechsel"
+      ],
+      "next": "Parlamentarisches Verfahren verfolgen. Kein unmittelbarer Handlungsbedarf bei den ÜNB.",
+      "docs": [
+        {
+          "title": "Stellungnahme zur EEG-Novelle (21(9)376)",
+          "type": "Stellungnahme",
+          "org": "Stiftung Umweltenergierecht",
+          "date": "",
+          "dateDisplay": "Okt 2026",
+          "fmt": "PDF",
+          "url": "https://www.bundestag.de/resource/blob/1222340/Stellungnahme_SV_Mueller_Stiftung_Umweltenergierecht.pdf"
+        },
+        {
+          "title": "Stellungnahme zur EEG-Novelle (21(9)362)",
+          "type": "Stellungnahme",
+          "org": "BEE",
+          "date": "",
+          "dateDisplay": "Okt 2026",
+          "fmt": "PDF",
+          "url": "https://www.bundestag.de/resource/blob/1222014/Stellungnahme_Bundesverband_Erneuerbare_Energie_eV.pdf"
+        },
+        {
+          "title": "Stellungnahme zur EEG-Novelle (21(9)359)",
+          "type": "Stellungnahme",
+          "org": "DIHK",
+          "date": "",
+          "dateDisplay": "Okt 2026",
+          "fmt": "PDF",
+          "url": "https://www.bundestag.de/resource/blob/1221846/Stellungnahme-DIHK.pdf"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "date": "2026-09-22",
+      "source": "4 ÜNB",
+      "ref": "",
+      "topics": [
+        "Netzanschluss",
+        "Positionen"
+      ],
+      "title": "ÜNB fordern Maßnahmen über das Netzanschlusspaket hinaus",
+      "url": "https://www.lobbyregister.bundestag.de/media/00/37/856968/Stellungnahme-Gutachten-SG2610050032.pdf",
+      "summary": "Die vier ÜNB haben sich in einem Schreiben vom 22. September zum Thema „Netzanschlüsse für den Industriestandort Deutschland sichern“ geäußert und weitere Maßnahmen vorgeschlagen, die über das Netzanschlusspaket hinausgehen. Sie verweisen auf die weiterhin hohe Zahl an Anschlussbegehren für Rechenzentren und auf zunehmend kleine Anschlussleistungen. Grundsatzentscheidungen zwischen Rechenzentren, Elektrolyseuren und Industrie sehen sie jenseits ihres Mandats. Sie wollen frühzeitig Flächen sichern und Schaltfelder vorbereiten.",
+      "why": "Gemeinsame Position der ÜNB zum Anschlussprozess, der genau das Kerngeschäft von Netzanschluss und Kundenmanagement betrifft. Zeigt, welche Regelungen die ÜNB zusätzlich vom Gesetzgeber erwarten.",
+      "check": [
+        "Welche konkreten Vorschläge gehen über das Netzanschlusspaket hinaus?",
+        "Wie wirken Mindestgrößen oder Bündelung kleiner Anschlussbegehren auf bestehende Kunden?",
+        "Vorabsicherung von Flächen und Schaltfeldern: Kostentragung und Rechtsgrundlage"
+      ],
+      "next": "Schreiben im Detail auswerten und mit der Ausschussphase zum Netzpaket abgleichen.",
+      "docs": [
+        {
+          "title": "Schreiben der vier ÜNB: Netzanschlüsse für den Industriestandort Deutschland sichern",
+          "type": "Stellungnahme",
+          "org": "4 ÜNB",
+          "date": "2026-09-22",
+          "fmt": "PDF",
+          "url": "https://www.lobbyregister.bundestag.de/media/00/37/856968/Stellungnahme-Gutachten-SG2610050032.pdf"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "date": "2026-09-09",
+      "source": "Bundesnetzagentur / BDEW",
+      "ref": "",
+      "topics": [
+        "Versorgungssicherheit",
+        "Kapazitätsmarkt"
+      ],
+      "title": "StromVKG: erste Ausschreibung überzeichnet, EU-Kommission genehmigt",
+      "url": "https://www.bdew.de/presse/erste-ausschreibungsrunde-stromvkg/",
+      "summary": "Zum ersten Gebotstermin am 8. September waren 4.500 MW reduzierte Leistung ausgeschrieben. Die Bundesnetzagentur meldete am 9. September eine deutliche Überzeichnung. Die EU-Kommission hat die beihilferechtliche Genehmigung Anfang September erteilt. Die Zuschläge sollen spätestens bis 3. November bekannt gegeben werden.",
+      "why": "Standort und Netzanschluss der neuen Kraftwerke betreffen die ÜNB direkt. Eine Südquote lenkt Zuschläge gezielt in netzengpassnahe Standorte im Süden.",
+      "check": [
+        "Regionale Verteilung der Zuschläge und resultierender Netzanschlussbedarf",
+        "Zeitplan der Anschlüsse",
+        "Momentanreserve-Pflicht neuer Anlagen und Wirkung auf die Systemdienstleistungen"
+      ],
+      "next": "Zuschläge bis 3. November abwarten und mit Netzplanung und Anschlussanfragen abgleichen. Zweiter Gebotstermin am 29. Dezember.",
+      "docs": [
+        {
+          "title": "Start der Ausschreibungen für Langzeitkapazitäten nach StromVKG",
+          "type": "Pressemitteilung",
+          "org": "Bundesnetzagentur",
+          "date": "2026-07-21",
+          "fmt": "Web",
+          "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260721_StromVKG.html"
+        },
+        {
+          "title": "EU-Kommission genehmigt StromVKG-Ausschreibungen",
+          "type": "Pressemitteilung",
+          "org": "BDEW",
+          "date": "",
+          "dateDisplay": "Sep 2026",
+          "fmt": "Web",
+          "url": "https://www.bdew.de/presse/eu-kommission-genehmigt-stromvkg-ausschreibungen-jetzt-zuegig-kapazitaetsmarkt-ausgestalten/"
+        }
+      ]
+    },
     {
       "stage": 1,
       "date": "2026-09-24",
@@ -66,7 +350,7 @@
         "Übergangsregeln für laufende Verfahren und bereits erteilte Zusagen",
         "Wer weist Engpassgebiete aus und welche Rolle haben ÜNB dabei?"
       ],
-      "next": "Anhörungstermin und Änderungsanträge verfolgen. Interne Abläufe für Antragsprüfung und Zusagen auf Anpassungsbedarf prüfen.",
+      "next": "Änderungsanträge der Koalition und den Ausschussbericht verfolgen. Interne Abläufe für Antragsprüfung und Zusagen auf Anpassungsbedarf prüfen.",
       "docs": [
         {
           "title": "Gesetzentwurf der Bundesregierung (Drucksache 21/7866)",
@@ -126,7 +410,7 @@
     },
     {
       "stage": 2,
-      "date": "2026-09-03",
+      "date": "2026-09-02",
       "source": "Bundesregierung",
       "ref": "",
       "topics": [
@@ -142,7 +426,7 @@
         "Welches Überbauungsverhältnis ist vorgesehen und wer trägt das Abregelungsrisiko?",
         "Auswirkungen auf Flächenentwicklungsplan und Anbindungszeitpunkte"
       ],
-      "next": "Parlamentarisches Verfahren verfolgen.",
+      "next": "Parlamentarisches Verfahren verfolgen. Siehe 1. Lesung am 8. Oktober.",
       "docs": [
         {
           "title": "Stellungnahme zum Entwurf der WindSeeG-Novelle 2026",
@@ -170,10 +454,10 @@
       "why": "Wirkt direkt auf die Entgeltbildung der ÜNB. Der Zuschuss muss in Kalkulation und Veröffentlichung der Entgelte korrekt abgebildet werden.",
       "check": [
         "Höhe und Auszahlung je Jahr",
-        "Verabschiedung rechtzeitig vor Veröffentlichung der Entgelte 2027?",
+        "Verabschiedung bis zum 7. Dezember 2026, damit die vorläufigen Entgelte 2027 Bestand haben?",
         "Nachweis- und Rückforderungspflichten"
       ],
-      "next": "Gesetzgebung verfolgen. Entgeltkalkulation 2027 mit und ohne Zuschuss vorbereiten.",
+      "next": "Gesetzgebung verfolgen. Siehe 1. Lesung am 8. Oktober und vorläufige Entgelte 2027.",
       "docs": [
         {
           "title": "Gesetzentwurf: Zuschuss zu den Übertragungsnetzkosten 2027–2029",
@@ -191,6 +475,45 @@
           "dateDisplay": "o. D.",
           "fmt": "Web",
           "url": "https://www.bdew.de/service/stellungnahme-zum-zuschuss-zu-den-uebertragungsnetzkosten-2026/"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "date": "2026-08-04",
+      "source": "4 ÜNB",
+      "ref": "GBK-25-01-1#2",
+      "topics": [
+        "Regulierungsrahmen",
+        "Positionen"
+      ],
+      "title": "ÜNB fordern vor der Rahmenfestlegung ein Gespräch mit dem BNetzA-Beirat",
+      "url": "https://www.lobbyregister.bundestag.de/media/e8/ca/855894/Stellungnahme-Gutachten-SG2610020040.pdf",
+      "summary": "In einem Schreiben an den Beirat bei der Bundesnetzagentur warnen die vier ÜNB, der Regulierungsrahmen entscheide darüber, ob Kapitalgeber die bis 2033 anstehenden Investitionen von rund 250 Mrd. € finanzieren. Der Eigenkapitalzins liegt nach ihren Angaben nach Steuern bei 4,13 % für Bestandsinvestitionen. Sie fordern einen ÜNB-spezifischen Risikoaufschlag. Die von der BNetzA beauftragten Gutachter (u. a. Betzer/Krüger/Stehle) halten einen solchen Aufschlag nicht für gerechtfertigt. Das Schreiben wurde erst Ende September im Lobbyregister veröffentlicht.",
+      "why": "Betrifft die Erlös- und Kostenregulierung der ÜNB und damit die Finanzierbarkeit des Netzausbaus. Die finale Rahmenfestlegung steht noch aus.",
+      "check": [
+        "Wie ändert sich der Rahmen gegenüber dem Entwurf vom Dezember 2025?",
+        "Wird ein Risikoaufschlag auf den Eigenkapitalzins gewährt?",
+        "Auswirkungen neuer Kostenprüfungen und Effizienzinstrumente auf die Planbarkeit"
+      ],
+      "next": "Finale Festlegung abwarten und Auswirkungen auf Planung und Finanzierung bewerten.",
+      "docs": [
+        {
+          "title": "Schreiben der vier ÜNB an den Beirat: Zukunft der Netzfinanzierung",
+          "type": "Stellungnahme",
+          "org": "4 ÜNB",
+          "date": "2026-08-04",
+          "fmt": "PDF",
+          "url": "https://www.lobbyregister.bundestag.de/media/e8/ca/855894/Stellungnahme-Gutachten-SG2610020040.pdf"
+        },
+        {
+          "title": "Kurzgutachten zum Aufschlag auf den Eigenkapitalzinssatz für ÜNB (Betzer/Krüger/Stehle)",
+          "type": "Gutachten",
+          "org": "Bundesnetzagentur",
+          "date": "2026-06-09",
+          "dateDisplay": "Jun 2026",
+          "fmt": "Web",
+          "url": "https://www.bundesnetzagentur.de/DE/Beschlusskammern/1_GZ/GBK-GZ/2025/GBK-25-01-1x2_UENB/Downloads/Gutachten.html"
         }
       ]
     },
@@ -338,15 +661,44 @@
       ],
       "title": "European Grids Package: Rat legt Position fest, Trilog steht an",
       "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/26/european-grids-package-council-backs-modernised-energy-network-for-decarbonisation/",
-      "summary": "Der Rat unterstützt ein zentrales Szenario für die europäische Netzplanung, schnellere Genehmigungen (überragendes öffentliches Interesse, Genehmigungsfiktion) und die schrittweise Reinvestition ungenutzter Engpasserlöse in Interkonnektoren: 10 % ab 2028, 25 % ab 2031.",
+      "summary": "Der Rat unterstützt ein zentrales Szenario für die europäische Netzplanung, schnellere Genehmigungen (überragendes öffentliches Interesse, Genehmigungsfiktion) und die schrittweise Reinvestition ungenutzter Engpasserlöse in Interkonnektoren: 10 % ab 2028, 25 % ab 2031. Das Europäische Parlament hat seine Verhandlungsposition am 2. Juli angenommen, die Trilog-Verhandlungen laufen mit dem Ziel einer Einigung noch 2026.",
       "why": "Verändert den Rahmen für TYNDP und die Verwendung von Engpasserlösen. Schnellere Genehmigungen können eigene Ausbauprojekte beschleunigen.",
       "check": [
         "Wie verbindlich wird das zentrale Szenario für nationale Netzentwicklungspläne?",
         "Folgen der Engpasserlös-Quote für die Erlösobergrenze",
-        "Position des Parlaments"
+        "Welche Position setzt sich im Trilog zwischen Rat und Parlament durch?"
       ],
       "next": "Kein unmittelbarer Handlungsbedarf. Trilog-Ergebnis prüfen.",
       "docs": []
+    },
+    {
+      "stage": 2,
+      "date": "2026-06-12",
+      "source": "Bundesnetzagentur",
+      "ref": "",
+      "topics": [
+        "Netzplanung"
+      ],
+      "title": "NEP Strom 2037/2045: BNetzA hält 118 von 159 Maßnahmen für bestätigungsfähig",
+      "url": "https://bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260612_NEP.html",
+      "summary": "Die Bundesnetzagentur hat den zweiten Entwurf des Netzentwicklungsplans vom 12. Juni bis 24. August konsultiert. Von 159 vorgeschlagenen Maßnahmen hält sie aktuell 118 für bestätigungsfähig, fünf Maßnahmen aus dem Zieljahr 2045 hat sie bereits für 2037 untersucht. Der Entwurf sieht bis zu acht weitere Offshore-Anbindungssysteme bis 2037 vor. Die Bestätigung ist für Ende 2026 geplant.",
+      "why": "Die Bestätigung legt fest, welche Ausbaumaßnahmen die ÜNB umsetzen. Sie bestimmt Investitionsplanung und Anschlussverfügbarkeit.",
+      "check": [
+        "Welche der übrigen Maßnahmen sind strittig und warum?",
+        "Abstimmung der Offshore-Anbindungen mit der WindSeeG-Novelle",
+        "Zeitplan der Bestätigung gegen Jahresende"
+      ],
+      "next": "Bestätigung der BNetzA abwarten und offene Maßnahmen mit der Netzplanung abgleichen.",
+      "docs": [
+        {
+          "title": "Vorläufige Prüfungsergebnisse NEP 2025-2037/2045",
+          "type": "Präsentation",
+          "org": "Bundesnetzagentur",
+          "date": "2026-08-11",
+          "fmt": "PDF",
+          "url": "https://bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/NEP/Strom/DL/Vortrag_Pruefungsergebnisse_allg..pdf"
+        }
+      ]
     },
     {
       "stage": 3,
